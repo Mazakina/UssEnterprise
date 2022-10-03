@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&family=Barlow:wght@100&family=Bellefair&display=swap');
+
+.container{
+  background-image: url(../assets/destination/background-destination-desktop.jpg) ;
+  background-size: cover;
+  width: 100%;
+  color:white;
+  display: flex;
+  flex-flow: column;
+  align-items:space-between;
+}
+.content{
+  display: flex;
+  align-items:flex-end;
+  justify-content:space-around;
+  height: 100%;
+  margin: 0 12vw;
+}
+.planet-description{
+  display: flex;
+  width: 100%;
+  height: 90%;
+  justify-content: space-between ;
+  align-items: center;
+  padding: 0;
+}
+.planet-description .left-content{
+  margin-bottom: auto;
+}
+.planet-description .left-content h5{
+  font-size: 28px;
+  font-weight:100;
+  letter-spacing: 4.7px;
+  color: white;
+}
+.planet-description .left-content .destination-number{
+  display: inline;
+  color: #50525A;
+  font-weight:400 ;
+}
+.planet-description .left-content img{
+  margin-top: 8rem;
+}
+
+.planet-description .right-content{
+  max-width: 450px;
+  min-height: 480px;
+  margin: 0 0 0 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.planet-description .nav-planets div{
+  display: inline;
+  padding-bottom: 12px;
+  position: relative;
+  margin-right: 35px;
+  color: rgb(219, 219, 219);
+  font-size: 16;
+  font-family:'Barlow Condensed';
+  font-weight: 100;
+  cursor:pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+.planet-description .nav-planets div:hover{
+  color:rgb(255, 255, 255)
+}
+.planet-description .nav-planets .active::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  
+  border-bottom: 2px solid white;
+}
+
+.planet-description .right-content h2{
+  margin:37px 0 18px;
+}
+.planet-description .right-content .body-text{
+  line-height:32px;
+  font-size: 18px;
+  font-family:'Barlow';
+  font-weight: 100;
+}
+.planet-description .right-content .planet-details{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  border-top: 1px solid #383B4B;
+  margin-top: 54px;
+  padding-top:28px;
+}
+
+.planet-description .right-content .planet-details .sub-heading-two {
+  font-family: 'Barlow Condensed';
+  font-weight: 100;
+  letter-spacing:2.3px;
+}
+
+.planet-description .right-content .planet-details .sub-heading {
+  font-family: 'Bellefair';
+  font-weight: 100;
+  font-size: 28px;
+  margin-top: 12px;
+  margin-right: 50px;
+}
+
+@media (min-width: 1000px) {
+  .container{
+    height: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content{
+    margin: 0 auto;
+  }
+  .container{
+    background-image: url(../assets/destination/background-destination-tablet.jpg); 
+  }
+  .planet-description{
+    flex-flow: column; 
+  }
+  .left-content{
+    margin-top: 3rem;
+  }
+
+  .left-content h5{
+    position:absolute;
+    left: 38px;
+  }
+  .left-content .planet-image{
+    width: 300px;
+    height: 300px;
+  }
+  .planet-description  .right-content{
+    margin:3rem auto !important;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    max-width: 80vw;
+
+  }
+  .right-content .body-text{
+    text-align:center;
+  }
+  .right-content .planet-details{
+    display: flex;
+    justify-content: space-around;
+  }
+  .right-content .planet-details div{
+    margin-top: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+  }
+  .planet-description .right-content .planet-details .sub-heading {
+    margin-right: 0px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container{
+    background-image: url(../assets/destination/background-destination-mobile.jpg); 
+  }
+
+  .planet-description .left-content h5{
+    font-size: 18px
+  }
+ .left-content .planet-image{
+    width: 200px;
+    height: 200px;
+ }
+ .nav-planets div:last-child{
+   margin-right:0 ;
+ }
+ .right-content .title{
+    font-size: 56px;
+ }
+ .right-content .body-text{
+    font-size: 15px;
+ }
+ .right-content .planet-details{
+    flex-direction: column !important;
+ }
+.planet-description .right-content .planet-details .sub-heading-two{
+  font-size:16px;
+  }
+.planet-description .right-content .planet-details .sub-heading{
+  font-size:28px;
+  }
+
+}

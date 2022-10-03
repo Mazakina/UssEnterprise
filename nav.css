@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&family=Barlow:wght@100&family=Bellefair&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* h1{
+  font-size:150px;
+  font-family: 'Bellefair';
+  font-weight: 400;
+}
+
+* h2{
+  font-size:100px;
+  font-weight: 100;
+  font-family: 'Bellefair';
+}
+
+* h3{
+  font-size:56px;
+  font-family: 'Bellefair';
+}
+
+* h4{
+  font-size:32px;
+  font-family: 'Bellefair';
+
+}
+* h5{
+  font-size: 28px;
+  font-family: 'Barlow Condensed';
+  font-weight: 400;
+  letter-spacing:2px
+}
+
+* a{
+  text-decoration:none;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* =========================================================== Header */
+
+
+
+header{
+  margin-left: auto;
+  padding-top:2rem ;
+  width: 97vw;
+  display:flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content:space-between;
+}
+
+header .nav-section{
+  width: 50%;
+  height: 96px;
+  color:white;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items:center;
+  backdrop-filter : blur(20px) brightness(1.2);
+}
+
+.header-line{
+  position: relative;
+  width:42vw;
+  right: -4vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  z-index: 3;
+}
+
+header .nav-section a{
+  margin-left:46px;
+  color:white;
+  white-space: nowrap
+}
+
+header .nav-section a p{
+  display: inline;
+}
+.modal{
+  display:none;
+}
+
+.nav-modal-container{
+  display:none;
+}
+@media (max-width:1000px)and (min-width:580px){
+  header{
+  padding-top:0rem !important;
+  max-width: 90vw !important;
+  }
+ .header-line{
+  display: none;
+ }
+ header .nav-section{
+  padding: 0 0 0;
+  width: 450px;
+ }
+  header .nav-section a p{
+    display: none;
+  }   
+
+}
+@media (max-width:1200px) {
+  .header-line{
+    display: none;
+   }
+   header .nav-section a{
+    margin-left:0px;
+    margin-right:24px;
+
+   }
+
+}
+
+@media (max-width:580px){
+  .modal{
+    display: flex;
+  }
+  .nav-section{
+    display: none !important;;
+  }
+  .logo{
+    margin: 24px;
+  }
+  header{
+    margin: 0;
+    padding-top:0rem;
+    width: 100%;
+  }
+
+  header .modal .open-modal-button{
+    background-color: transparent;
+    color: #D0D6F9;
+    border: none;
+    display: flex;
+    margin: auto 27px ;
+  }
+  header .nav-modal-container{
+    display:none;    
+    flex-flow: column;
+    justify-content:flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+
+    width: 254px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.062);
+    backdrop-filter : blur(20px) ;
+    
+  }
+  header .nav-modal-container button{
+    position: absolute;
+    background: transparent;
+    width: 22px;
+    height: 22px;
+    top:38px;
+    right:27px ;
+    border:none;
+  }
+
+  header .nav-modal-container .nav-modal{
+    display: flex;
+    flex-flow:column;
+    white-space:nowrap;
+    margin: 118px;
+    margin-left: 32px;
+  }
+  header .nav-modal-container .nav-modal a{
+    margin-bottom: 32px;
+    color:white;
+    font-family: 'Barlow Condensed';
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

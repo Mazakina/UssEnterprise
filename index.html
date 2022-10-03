@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="logo">
+      <a href="/#"><img src="./assets/shared/logo.svg" alt="logo"></a>
+    </div>
+    <div class="header-line"></div>
+    <nav class="nav-section">
+      <a href="/#"><p>00</p> HOME</a>
+      <a href="./destination/"><p>01</p> DESTINATION</a>
+      <a href="./crew/"><p>02</p> CREW</a>
+      <a href="./technology/"><p>03</p> TECHNOLOGY</a>
+    </nav>
+    <div class="modal">
+      <button onclick="setModalOpen()"  class="open-modal-button"><img src="../assets/shared/icon-hamburger.svg" alt="open header button"></button>
+      <div class="nav-modal-container">
+        <button onclick="setModalClose()" class><img src="../assets/shared/icon-close.svg" alt="close header button"></button>
+        <nav class="nav-modal">
+          <a href="/#"><span>01</span> HOME</a>
+          <a href="../destination/"><span>02</span>  DESTINATION</a>
+          <a href="../crew/"><span>03</span> CREW</a>
+          <a href="../technology/"><span>04</span> TECHNOLOGY</a>
+        </nav>
+      </div>
+    </div>
+  </header> 
+
+  <section class="content">
+    <div class="left-content">
+      <h5>SO, YOU WANT TO TRAVEL TO</h5>
+      <h1>SPACE</h1>
+      <p>
+        Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </div>
+    <div class="right-content">
+      <a class="explore-circle" href="">
+        <h4>EXPLORE</h4>
+      </a>
+    </div>
+  </section>
+</div>
+
+
+<script src="./nav.js"></script>
+</body>
+</html>

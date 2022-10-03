@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="./crew-style.css">
+  <title>Crew</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/#"><img src="../assets/shared/logo.svg" alt="logo"></a>
+      </div>
+      <div class="header-line"></div>
+      <nav class="nav-section">
+        <a href="/#"><p>00</p> HOME</a>
+        <a href="../destination/"><p>01</p> DESTINATION</a>
+        <a href="./"><p>02</p> CREW</a>
+        <a href="../technology/"><p>03</p> TECHNOLOGY</a>
+      </nav>
+      <div class="modal">
+        <button onclick="setModalOpen()"  class="open-modal-button"><img src="../assets/shared/icon-hamburger.svg" alt="open header button"></button>
+        <div class="nav-modal-container">
+          <button onclick="setModalClose()" class><img src="../assets/shared/icon-close.svg" alt="close header button"></button>
+          <nav class="nav-modal">
+            <a href="/#"><span>01</span> HOME</a>
+            <a href="../destination/"><span>02</span>  DESTINATION</a>
+            <a href="./"><span>03</span> CREW</a>
+            <a href="../technology/"><span>04</span> TECHNOLOGY</a>
+          </nav>
+        </div>
+      </div>
+    </header> 
+    
+    <section class="content">
+      <div class="left-content">
+        <div class="title">
+          <h5><p class="crew-number">02</p> MEET YOUR CREW</h5>
+        </div>
+        <img id='crew-image-mobile'src="../assets/crew/image-douglas-hurley.png" alt="crew-member-image">
+        <div id= 'nav-tabs-mobile'class="nav-tabs">
+          <nav id="crew-nav-mobile" class="crew-nav">
+          </nav>
+        </div>
+        <div class="crew-details">
+          <h4 id="role">COMMANDER</h4>
+          <h3 id="crew-name">DOUGLAS HURLEY</h3>
+          <p class="body-text">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+          and former NASA astronaut. He launched into space for the third time as 
+          commander of Crew Dragon Demo-2.
+        </div>
+  
+        <div id = 'nav-tabs-wide'class="nav-tabs">
+          <nav id='crew-nav-wide' class="crew-nav ">
+          </nav>
+        </div>
+        </p>
+      </div>
+      <div class="right-content">
+        <img id='crew-image'src="../assets/crew/image-douglas-hurley.png" alt="crew-member-image">
+      </div>
+    </section>
+  </div>
+
+  <script src="../nav.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

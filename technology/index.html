@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="./technology-style.css">
+  <title>Tecnhology</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/#"><img src="../assets/shared/logo.svg" alt="logo"></a>
+      </div>
+      <div class="header-line"></div>
+      <nav class="nav-section">
+        <a href="/#"><p>00</p> HOME</a>
+        <a href="../destination/"><p>01</p> DESTINATION</a>
+        <a href="../crew/"><p>02</p> CREW</a>
+        <a href="./"><p>03</p> TECHNOLOGY</a>
+      </nav>
+      <div class="modal">
+        <button onclick="setModalOpen()"  class="open-modal-button"><img src="../assets/shared/icon-hamburger.svg" alt="open header button"></button>
+        <div class="nav-modal-container">
+          <button onclick="setModalClose()" class><img src="../assets/shared/icon-close.svg" alt="close header button"></button>
+          <nav class="nav-modal">
+            <a href="/#"><span>01</span> HOME</a>
+            <a href="../destination/"><span>02</span>  DESTINATION</a>
+            <a href="../crew/"><span>03</span> CREW</a>
+            <a href="./"><span>04</span> TECHNOLOGY</a>
+          </nav>
+        </div>
+      </div>
+    </header> 
+    
+    <section class="content">
+      <div class="left-content">
+        <h5 id="first-heading"><p class="technology-number">03</p> SPACE LAUNCH 101</h5>
+        <div class="left-box">
+          <nav class="technology-nav">
+            <button id="opt1" class="option active" onclick="setActive(1)" href="">1</button>
+            <button id="opt2" class="option" onclick="setActive(2)" href="">2</button>
+            <button id="opt3" class="option" onclick="setActive(3)" href="">3</button>
+          </nav>
+          <div class="description">
+            <p class="terminology">THE TERMINOLOGY...</p>
+            <h3 id="text-title">LAUNCH VEHICLE</h3>
+
+            <p class="text-box">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+              payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+              WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+              it's quite an awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div>
+
+  
+        </p>
+      </div>
+      <div class="right-content">
+        <h5 id="second-heading"><p class="technology-number">03</p> SPACE LAUNCH 101</h5>
+        <div id="img-container">
+          <img id='content-img'src="" alt="douglas-hurley-image">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="../nav.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

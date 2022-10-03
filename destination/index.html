@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../nav.css">
+  <link rel="stylesheet" href="./destination-style.css">
+
+  <title>Space Traveler | Destinations</title>
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div class="logo">
+      <a href="/#"><img src="../assets/shared/logo.svg" alt="logo"></a>
+    </div>
+    <div class="line-container">
+      <div class="header-line"></div>
+    </div>
+    <nav class="nav-section">
+      <a href="/#"><p>00</p> HOME</a>
+      <a href="./"><p>01</p> DESTINATION</a>
+      <a href="../crew/"><p>02</p> CREW</a>
+      <a href="../technology/"><p>03</p> TECHNOLOGY</a>
+    </nav>
+    <div class="modal">
+      <button onclick="setModalOpen()"  class="open-modal-button"><img src="../assets/shared/icon-hamburger.svg" alt="open header button"></button>
+      <div class="nav-modal-container">
+        <button onclick="setModalClose()" class><img src="../assets/shared/icon-close.svg" alt="close header button"></button>
+        <nav class="nav-modal">
+          <a href="/#"><span>01</span> HOME</a>
+          <a href="./"><span>02</span>  DESTINATION</a>
+          <a href="../crew"><span>03</span> CREW</a>
+          <a href="../technology/"><span>04</span> TECHNOLOGY</a>
+        </nav>
+      </div>
+    </div>
+  </header> 
+
+  <section class="content">
+    <div class="planet-description">
+      
+      <div class="left-content">
+        <h5><p class="destination-number">01</p> PICK YOUR DESTINATION</h5>
+        <img class="planet-image" src="../assets/destination/image-moon.png" alt="destination-image">
+      </div>
+
+      <div class="right-content">
+        <nav class="nav-planets">
+          <div href="" onclick="onClickDestinationHandler(1)" id="destination1" class= "destination-option active">MOON</div>
+          <div href="" onclick="onClickDestinationHandler(2)" id="destination2" class= "destination-option">MARS</div>
+          <div href="" onclick="onClickDestinationHandler(3)" id="destination3" class= "destination-option">EUROPA</div>
+          <div href="" onclick="onClickDestinationHandler(4)" id="destination4" class= "destination-option">TITAN</div>
+        </nav>
+
+        <h2 class="title">MOON</h2>
+
+        <p class="body-text">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+
+        <div class="planet-details">
+          <div>
+            <p class="sub-heading-two">AVG. DISTANCE</p>
+            <h5 id="distance" class="sub-heading">384,400 KM</h5>
+          </div>
+      
+          <div>
+            <p class="sub-heading-two">EST. TRAVEL TIME</p>
+            <h5 id="duration" class="sub-heading">3 DAYS</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="../nav.js"></script>
+  <script src="./script.js"></script>
+ </div>
+</body>
+</html>
