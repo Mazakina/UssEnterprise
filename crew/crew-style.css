@@ -6,6 +6,8 @@
   display: flex;
   flex-flow: column;
   align-items:space-between;
+  height: fit-content  !important;
+  min-height: 100vh;
 
 }
 
@@ -64,6 +66,7 @@
 }
 .left-content .nav-tabs .crew-nav {
   display: flex;
+  margin-bottom:2rem;
 }
 .left-content .nav-tabs .crew-nav .nav-option{
   width: 15px;

@@ -2,7 +2,8 @@
   background-image: url(./assets/home/background-home-desktop.jpg) ;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   color:white;
   display: flex;
   flex-flow: column;
@@ -15,7 +16,7 @@
   padding: 1rem;
   justify-content:space-around;
   align-items:center;
-  height: 60%;
+  height: 60vh;
 }
 
 .content .left-content{
@@ -38,6 +39,7 @@
   font-size: 18px;
 }
 .content .right-content{
+  margin-top:1rem;
   display: flex;
   align-items:center;
   justify-content:center;
@@ -50,10 +52,22 @@
   display:flex;
   align-items:center;
   justify-content:center;
-  transition: transform 0.2s ease-in-out;
+
 }
-.content .explore-circle:hover {
-  transform: scale(1.1);
+.content .explore-circle::before{
+  content:"";
+  position: absolute;
+  width: 274px;
+  height: 274px;
+  border-radius:50%;
+  background-color:rgba(34, 34, 34, 0);
+  z-index: 1;
+  transition: border 0.2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.363);
+
+}
+.content .explore-circle:hover::before{
+  border: 50px solid rgba(255, 255, 255, 0.363);
 }
 
 .content .explore-circle h4 {
@@ -82,7 +96,9 @@
   .container{
     background-image: url(./assets/home/background-home-mobile.jpg) 
   }
-
+  .content{
+    margin-top:2rem ;
+  }
 
   .content .left-content h5{
     font-size: 18px;
@@ -99,10 +115,9 @@
     margin: 0 auto;
   }
 
-  .content .explore-circle{
-    width: 150px;
-    height: 150px;
-    margin-bottom: -2rem;
+  .content .right-content{
+    transform:scale(.9)
+
   }
   .content .explore-circle h4 {
     font-size:24px

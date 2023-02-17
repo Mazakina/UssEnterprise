@@ -3,6 +3,7 @@
   background-image: url(../assets/technology/background-technology-desktop.jpg);
   background-size: cover;
   width:100vw;
+  height: fit-content !important;
   min-height: 100vh;
   color:white;
   display: flex;
